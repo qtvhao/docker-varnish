@@ -1,3 +1,6 @@
+Varnish provides the ability to configure malloc and file combine to improve performance and reduce system load. To enable this, the "malloc" and "file_combine" parameters must be set in the Varnish configuration file. The malloc parameter enables caching by allocating a certain amount of memory for caching objects, while the file_combine parameter allows multiple files to be combined into one file for faster response times. Once these parameters are correctly set in the Varnish configuration file, Varnish will be able to combine files and allocate memory for caching to provide better performance.
+
+
 [![GitHub CI build status badge](https://github.com/varnish/docker-varnish/workflows/GitHub%20CI/badge.svg)](https://github.com/varnish/docker-varnish/actions?query=workflow%3A%22GitHub+CI%22)
 <!--[![update.sh build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/update.sh/job/varnish.svg?label=Automated%20update.sh)](https://doi-janky.infosiftr.net/job/update.sh/job/varnish/)
 [![amd64 build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/varnish.svg?label=amd64)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/varnish)
